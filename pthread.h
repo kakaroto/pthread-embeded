@@ -46,8 +46,6 @@
 
 #include <pte_types.h>
 
-#include <sched.h>
-
 #define PTE_VERSION 2,8,0,0
 #define PTE_VERSION_STRING "2, 8, 0, 0\0"
 
@@ -386,6 +384,7 @@ enum
 #undef SEM_VALUE_MAX
 #define SEM_VALUE_MAX                           INT_MAX
 
+#include <sched.h>
 
     /*
      * Generic handle type - intended to extend uniqueness beyond
